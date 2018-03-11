@@ -29,6 +29,8 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(ga, s);
     })();
+        
+        var sound = new Audio("button-16.mp3"); // εισαγωγη ηχου//
     </script>
 </head>
 <!-- Add feature detection and noscript -->
@@ -36,17 +38,16 @@
 <body>
 
     <header role="banner" id="title">
-        <h1>Who's funding the big three?</h1>
-    </header>
+        <h1>Who's funding the big three?</h1>    </header>
     <nav role="navigation">
-        <ul>
-            <li><a href="#" role="button" class="pure-button switch" id="all-donations">All money</a>
+        <ul>         <!-- μεσα στα κουμπια βαζουμε τη συναρτηση για τον ηχο -->
+            <li><a href="#" role="button" class="pure-button switch" id="all-donations" onmousedown="sound.play()">All money</a>
             </li>
-            <li><a href="#" role="button" class="pure-button switch" id="group-by-money-source">The public's purse</a>
+            <li><a href="#" role="button" class="pure-button switch" id="group-by-money-source" onmousedown="sound.play()">The public's purse</a>
             </li>
-            <li><a href="#" role="button" class="pure-button switch" id="group-by-party">Split by party</a>
+            <li><a href="#" role="button" class="pure-button switch" id="group-by-party"onmousedown="sound.play()";>Split by party</a>
             </li>
-            <li><a href="#" role="button" class="pure-button switch" id="group-by-donor-type">Split by type of donor</a>
+            <li><a href="#" role="button" class="pure-button switch" id="group-by-donor-type" onmousedown="sound.play()";>Split by type of donor</a>
             </li>
         </ul>
     </nav>
