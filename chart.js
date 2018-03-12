@@ -364,6 +364,13 @@ function mouseover(d, i) {
 	
 	
 	}
+//dokimi fwnhs//
+ .style("top", (parseInt(d3.select(this).attr("cy") - (d.radius+150)) + offset.top) + "px")
+ 		.html(infoBox)
+ 			.style("display","block");
+	var speech = new SpeechSynthesisUtterance("Donation by " + donor + ". It amounts to " + amount + " pounds");
+	window.speechSynthesis.speak(speech);
+ 	}
 
 function mouseout() {
 	// no more tooltips
