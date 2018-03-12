@@ -110,7 +110,7 @@ function start() {
 	
 	//dokimi//
 	
-	var paragraphContent = "";
+	var magnifyingmouse = "";
 
 		$("html").find('p').each(function(){
 
@@ -119,8 +119,8 @@ function start() {
 		text[i] = '<span onmouseover=(this.style.fontSize="xx-large") onmouseout=(this.style.fontSize="initial") >'+text[i]+'</span>';
 		}
 
-		paragraphContent = text.join(' ');
-		$(this).html(paragraphContent);
+		magnifyingmouse = text.join(' ');
+		$(this).html(magnifyingmouse);
 		});
 	
 	
