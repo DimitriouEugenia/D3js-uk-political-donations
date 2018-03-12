@@ -108,8 +108,7 @@ function start() {
 			.duration(2500)
 			.attr("r", function(d) { return d.radius; });
 	
-	//dokimi//
-	
+	                                  //χρηση του ποντικιου ως μεγεθυντικος φακος//
 	var magnifyingmouse = "";
 
 		$("html").find('p').each(function(){
