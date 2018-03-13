@@ -75,7 +75,7 @@ function transition(name) {
 		$("#view-source-type").fadeIn(1000);
 		return fundsType();
 	}
-	if (name === "group-by-amount") {
+	if (name === "group-by-amount") { //για το κουμπι της καινουργιας ομαδοποιησης
 		$("#initial-content").fadeOut(250);
 		$("#value-scale").fadeOut(250);
 		$("#view-party-type").fadeOut(250);
@@ -170,7 +170,7 @@ function fundsType() {
 		.start();
 }
 
-function amountsGroup() {
+function amountsGroup() { // συναρτηση για την ομαδοποιηση των ποσων
 	force.gravity(0)
 		.friction(0.8)
 		.charge(function(d) { return -Math.pow(d.radius, 2.0) / 3; })
@@ -209,7 +209,7 @@ function all(e) {
 			.attr("cy", function(d) {return d.y; });
 }
 
-function amounts(e) {
+function amounts(e) { // συναρτηση για την ομαδοποιηση των ποσων
 	node.each(moveToAmount(e.alpha));
 
 		node.attr("cx", function(d) { return d.x; })
@@ -283,7 +283,7 @@ function moveToFunds(alpha) {
 		d.y += (centreY - d.y) * (brake + 0.02) * alpha * 1.1;
 	};
 }
-function moveToAmount(alpha) {
+function moveToAmount(alpha) { // συναρτηση για την θεση της ομαδοποιησης των ποσων
 	return function(d) {
 		var centreY = svgCentre.y;		
 			if  (d.value >= 500000){
