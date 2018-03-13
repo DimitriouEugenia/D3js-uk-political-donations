@@ -361,6 +361,8 @@ function mouseover(d, i) {
     .style("top", (parseInt(d3.select(this).attr("cy") - (d.radius+150)) + offset.top) + "px")
 		.html(infoBox)
 			.style("display","block");
+	responsiveVoice.speak(donor + ' £' + amount); //εισαγωγη αναπαραγωγης ηχου για την ονομασια του δωρητη//
+	
 	}
 
 
@@ -372,6 +374,9 @@ function mouseout() {
 
 		d3.select(".tooltip")
 			.style("display", "none");
+		responsiveVoice.cancel(); //ακυρωση αναπαραγωγης ηχου για την ονομασια του δωρητη//
+
+	
 		}
 
 function mouseclick(d) {               // οριζουμε την συναρτηση mouseclick//
