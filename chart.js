@@ -47,7 +47,7 @@ function transition(name) {
 		$("#value-scale").fadeIn(1000);
 		$("#view-donor-type").fadeOut(250);
 		$("#view-source-type").fadeOut(250);
-		$("#view-amount").fadeIn(250);
+		$("#view-amount").fadeOut(250);
 		$("#view-party-type").fadeOut(250);
 		return total();
 		//location.reload();
@@ -57,7 +57,7 @@ function transition(name) {
 		$("#value-scale").fadeOut(250);
 		$("#view-donor-type").fadeOut(250);
 		$("#view-source-type").fadeOut(250);
-		$("#view-amount").fadeIn(250);
+		$("#view-amount").fadeOut(250);
 		$("#view-party-type").fadeIn(1000);
 		return partyGroup();
 	}
@@ -65,7 +65,7 @@ function transition(name) {
 		$("#initial-content").fadeOut(250);
 		$("#value-scale").fadeOut(250);
 		$("#view-party-type").fadeOut(250);
-		$("#view-amount").fadeIn(250);
+		$("#view-amount").fadeOut(250);
 		$("#view-source-type").fadeOut(250);
 		$("#view-donor-type").fadeIn(1000);
 		return donorType();
@@ -73,7 +73,7 @@ function transition(name) {
 	if (name === "group-by-money-source") {
 		$("#initial-content").fadeOut(250);
 		$("#value-scale").fadeOut(250);
-		$("#view-amount").fadeIn(250);
+		$("#view-amount").fadeOut(250);
 		$("#view-donor-type").fadeOut(250);
 		$("#view-party-type").fadeOut(250);
 		$("#view-source-type").fadeIn(1000);
