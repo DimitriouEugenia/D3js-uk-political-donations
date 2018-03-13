@@ -105,7 +105,7 @@ li {
     right: 0
 }
 
-/*Θεση για το κειμενο της ομαδοποιησης*/
+/*Θεσεις για τους τιτλους ποσων ομαδοποιησης*/
 #big {
     font-weight: bold;
     position: absolute;
@@ -125,7 +125,7 @@ li {
     font-weight: bold;
     position: absolute;
     top: 200px;
-    left: 1000px;
+    left: 900px;
     width: 93px;
 }
 
