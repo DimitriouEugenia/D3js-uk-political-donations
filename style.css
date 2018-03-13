@@ -6,7 +6,7 @@ p {
     margin: 5px 0;
 }
 p:hover {
-    font-size:50%; /*Μεγεθυνση κειμενου*/
+    font-size:200%; /*Μεγεθυνση κειμενου*/
 }
 strong {
     font-weight: 700;
