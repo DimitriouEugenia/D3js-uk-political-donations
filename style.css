@@ -26,7 +26,7 @@ li {
 }
 
 /* Initial appearance on load */
-#view-party-type, #view-donor-type, #view-source-type {
+#view-party-type, #view-donor-type, #view-source-type, #view-amount { /*Προσθεσα το #view-amount*/
     display: none;
 }
 
@@ -100,6 +100,30 @@ li {
     top: 530px;
     text-align: right;
     right: 0
+}
+
+/*Θεση για το κειμενο της ομαδοποιησης*/
+#big {
+    font-weight: bold;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    width: 93px;
+}
+
+#small {
+    font-weight: bold;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    width: 93px;
+}
+#smaller {
+    font-weight: bold;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    width: 93px;
 }
 
 /* Value scale */
