@@ -123,21 +123,6 @@ function start() {
 			.duration(2500)
 			.attr("r", function(d) { return d.radius; });
 	
-	                                  //χρηση του ποντικιου ως μεγεθυντικος φακος//
-	var magnifyingmouse = "";
-
-		$("html").find('p').each(function(){
-
-		var text = $(this).text().split(' ');//
-		for( var i = 0, len = text.length; i<len; i++ ) {
-		text[i] = '<span onmouseover=(this.style.fontSize="xx-large") onmouseout=(this.style.fontSize="initial") >'+text[i]+'</span>';
-		}
-
-		magnifyingmouse = text.join(' ');
-		$(this).html(magnifyingmouse);
-		});
-	
-	
 }
 
 function total() {
