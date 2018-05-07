@@ -392,6 +392,11 @@ function mouseover(d, i) {
 			.style("display","block");
 	responsiveVoice.speak(donor + ' £' + amount); //εισαγωγη αναπαραγωγης ηχου για την ονομασια του δωρητη//
 	
+	var img = document.createElement("IMG");
+	img.setAttribute("src", imageFile);
+
+
+	
 	}
 
 
