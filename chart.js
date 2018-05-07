@@ -394,7 +394,7 @@ function mouseover(d, i) {
 	
 	var img = document.createElement("IMG");
 	img.setAttribute("src", imageFile);
-
+	document.getElementById("images").appendChild(img); 
 
 	
 	}
