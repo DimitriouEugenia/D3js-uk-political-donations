@@ -391,9 +391,10 @@ function mouseover(d, i) {
 		.html(infoBox)
 			.style("display","block");
 	responsiveVoice.speak(donor + ' £' + amount); //εισαγωγη αναπαραγωγης ηχου για την ονομασια του δωρητη//
-	var img = new Image(42,42);
-	img = document.createElement("IMG", );
+	var img = document.createElement("IMG", );
 	img.setAttribute("src", imageFile);
+	elem.setAttribute("height", "42");
+	elem.setAttribute("width", "42");	
 	document.getElementById("images").appendChild(img); 
 
 	
